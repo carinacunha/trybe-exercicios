@@ -4,22 +4,46 @@
     <meta charset="UTF-8">
     <title>Exercícios 3.2 - Primeiros passos em  CSS</title>
     <style>
+        
         h1{
             font-size: 65px;
-            color:orange;
+            color: #D08770;
+            font-family: sans-serif;
+            text-decoration-line: underline overline;
+            text-decoration-color: #D08770;
+            font-style: normal;
+        }
+        p{
+            font-weight: 600;
+            font-size: 3em;
+            line-height: 50px;
         }
         .blue{
-            background: skyblue;
+            background: #88C0D0;
         }
+        body{
+            font-size:16px;
+            text-align: justify;
+        }
+        #amarelo{
+            background: #EBCB8B;
+        }
+        #vermelho{
+            background: #BF616A;
+        }
+        #marrom{
+            background: #896B49;
+        }
+      
     </style>
 </head>
 <body>
     <h1>Exercícios 3.2</h1>
     <p class="blue">Qual é a sua cor favorita?</p>
-    <ul class="blue">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+    <ul>
+      <li id="amarelo">Amarelo</li>
+      <li id="vermelho">Vermelho</li>
+      <li id="marrom">Marrom</li>
     </ul>
 </body>
 </html>
