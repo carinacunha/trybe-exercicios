@@ -1,7 +1,4 @@
-# Exercício de Fixação: box model
+# Exercício de Fixação: Posicionamento de elementos
 
-Neste exercício foram exercitadas conceitos usados para a estilização do layout de caixas no CSS. As propriedades usadas foram **height**, **width**, **padding**, **margin** e **border**.
+Neste exercício foi exercitado o posicionamento de elementos dentro do layout de caixas no CSS. Dentre as propriedades usadas estão **top**, **left**, **z-index**, **position**.
 
-Abaixo está figura do layout final:
-
-![caixas](caixas.png)
