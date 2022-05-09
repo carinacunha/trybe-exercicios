@@ -1,0 +1,35 @@
+ol{
+    background: #F9D923;
+}
+
+.par{
+    color:#36AE7C;
+}
+
+.impar{
+    text-transform: uppercase;
+}
+
+h1, h3{
+    color: #EB5353;
+} 
+
+li{
+    font-size: 20px;
+}
+
+li.italico{ 
+    font-weight: 600;
+}
+li.programacao{
+    color:#4700D8;   
+}
+
+li.java{
+    background-color: #D96098;
+}
+
+.negrito :hover{
+    font-weight: 600;
+    color:#FF8D29;
+}
