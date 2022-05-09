@@ -1,0 +1,35 @@
+div :hover{
+    border-color: pink;
+    border-style:ridge;
+}
+
+body :nth-child(3){
+    color: #FF4949;
+    font-style: italic;
+}
+
+body :nth-of-type(2){
+    color: #FF8D29;
+    font-style: normal;
+    
+}
+
+body :nth-of-type(3){
+    color: #1C6DD0;
+    width: 300px;
+    font-size: 20px;
+    font-style: italic;
+
+    
+}
+
+body :nth-of-type(4){
+    color: #313552;
+    font-style: normal;
+    
+}
+
+body :nth-of-type(5){
+    color: #FED1EF;
+    font-style: italic;
+}

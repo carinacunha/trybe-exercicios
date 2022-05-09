@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+h1, p{
+    text-align: center;
+}
+li:hover{
+    background: palevioletred;
+}
+li:active{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ol, ul{
+    list-style: none;
+}
