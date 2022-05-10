@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    color: #524A4E;
+    padding: 20px;
+ }
+ 
+header{
+    display: block;
+    width: 55%;
+    margin-top: 70px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: black;
+ }
+
+ aside{
+    display: inline-block;
+    width: 10%;
+    margin-left: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    line-height: 30px;
+ }
+
+ aside :link{
+    text-decoration: double; 
+ } 
+
+aside :hover{
+    color:#524A4E;
+}
+
+li{
+    list-style-type: none;
+ }
+ 
+ article{
+    display: block;
+    width: 55%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto Slab', serif;
+    line-height: 30px;
+ }
+ 
+ h2{
+    font-size: 25px;
+    color: black;
+    text-align: justify;
+    padding-bottom: 20px;
+ }
+  
+.h3{
+    font-size: 20px;
+    color: #524A4E;
+    text-align: justify;
+    padding-bottom: 20px;
+    
+ }
+ 
+ .p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #524A4E;
+ }
+ 
+ .image{
+    width: 550px;
+    position: relative;
+    left: 180px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+ }
+
+#referencias, #mais{
+    display: block;
+    width: 55%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #524A4E;
+}
+
+#referencias :link, #mais :link{
+    text-decoration: double;
+
+}
+
+#referencias :hover, #mais :hover{
+    color:#524A4E;
+}
+
+ footer{
+     text-align: center;
+     margin-top: 60px;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 14px;
+
+ }
