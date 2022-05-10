@@ -7,80 +7,109 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
     color: #524A4E;
     padding: 20px;
-}
-
+ }
+ 
 header{
+    display: block;
+    width: 55%;
+    margin-top: 70px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     color: black;
-    text-align: justify;
-    display: block;
-    width: 60%;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-}
+ }
 
-aside{
+ aside{
     display: inline-block;
     width: 10%;
-    margin-top: 2%;
-    margin-left: 3%;
-    padding: 60px;
-    font-size: 18px;
-    line-height: 50px;
-    color: #524A4E;  
+    margin-left: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    line-height: 30px;
+ }
+
+ aside :link{
+    text-decoration: double; 
+ } 
+
+aside :hover{
+    color:#524A4E;
 }
 
 li{
     list-style-type: none;
-}
-
-article{
-    display: inline-block;
-    width: 50%;
-    margin-top: 3%;
-    text-align: justify;
+ }
+ 
+ article{
+    display: block;
+    width: 55%;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-}
-
-h2{
-    display: inline-block;
     font-family: 'Roboto Slab', serif;
+    line-height: 30px;
+ }
+ 
+ h2{
     font-size: 20px;
     color: black;
     text-align: justify;
-    padding-bottom: 20px;
-}
-
+    padding-bottom: 15px;
+ }
+  
 .h3{
-    display: inline-block;
-    font-family: 'Roboto Slab', serif;
     font-size: 20px;
     color: #524A4E;
     text-align: justify;
     padding-bottom: 20px;
-    line-height: 30px;
-}
-
-.p{
-    display: inline-block;
+    
+ }
+ 
+ .p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: #524A4E;
-    text-align: justify;
-    padding-bottom: 14px;
-    line-height: 30px;
-}
-
-.image{
-    width: 500px;
-    image-rendering: auto;
+ }
+ 
+ .image{
+    width: 550px;
     position: relative;
-    left: 150px;
+    left: 180px;
     padding-top: 30px;
     padding-bottom: 60px;
+ }
+
+#referencias, #mais{
+    display: block;
+    width: 55%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #524A4E;
 }
+
+#referencias :link, #mais :link{
+    text-decoration: double;
+
+}
+
+#referencias :hover, #mais :hover{
+    color:#524A4E;
+}
+
+ footer{
+     text-align: center;
+     margin-top: 60px;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 14px;
+
+ }
