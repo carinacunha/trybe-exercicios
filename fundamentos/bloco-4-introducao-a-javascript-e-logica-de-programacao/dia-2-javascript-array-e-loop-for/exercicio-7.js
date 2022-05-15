@@ -9,4 +9,4 @@ for(let index = 0; index < numbers.length; index += 1){
     }
 }
 
-console.log(lower);
+console.log(lower); 

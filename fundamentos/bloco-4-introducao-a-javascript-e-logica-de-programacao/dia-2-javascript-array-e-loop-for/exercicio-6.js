@@ -12,4 +12,4 @@ for(let index = 0; index < numbers.length; index += 1){
         contImpar += 1;
     }
 }
-console.log(`Existem ${contPar} números pares e ${contImpar} números ímpares`)
+console.log(`Existem ${contPar} números pares e ${contImpar} números ímpares`);
