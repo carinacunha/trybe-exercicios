@@ -72,4 +72,7 @@ leitor.livrosFavoritos.push(
 console.log(leitor)
 //console.log(leitor.livrosFavoritos[1].titulo);
 
+//🚀 8 - Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: "Julia tem 2 livros favoritos"
 
+let livros = leitor.livrosFavoritos;
+console.log(leitor.nome + ' tem ' + livros.length + ' livros favoritos.');
