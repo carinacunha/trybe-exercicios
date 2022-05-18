@@ -104,16 +104,38 @@
 //6.Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
 
 
-let numero = 5;
+// let numero = 5;
 
-function summation(numero){
-    let sum = 0;
-    for(n = 1; n <= numero; n += 1){
-        sum += n;
-   }
-   return sum;
+// function summation(numero){
+//     let sum = 0;
+//     for(n = 1; n <= numero; n += 1){
+//         sum += n;
+//    }
+//    return sum;
+// }
+
+// result = summation(numero);
+// console.log(result);
+
+//7. Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
+
+let word = 'trybe';
+let ending = 'be';
+
+function verificaFimPalavra(word, ending){
+
+    let wordEnding = word.substring(word.length - ending.length, word.length);
+    
+    if(wordEnding === ending){
+        return true;
+    }
+
+    return false;
 }
 
-result = summation(numero);
+result = verificaFimPalavra('trybe', 'be');
 console.log(result);
+
+
+
 
