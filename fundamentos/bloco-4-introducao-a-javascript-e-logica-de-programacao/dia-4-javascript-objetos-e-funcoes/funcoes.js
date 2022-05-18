@@ -69,35 +69,51 @@
 
 //🚀 5. Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
 
-let numbers = [2, 3, 2, 5, 8, 2, 3, 5, 5, 5];
+// let numbers = [2, 3, 2, 5, 8, 2, 3, 5, 5, 5];
 
 
-function returnFrequent(numbers){
+// function returnFrequent(numbers){
 
-    let counts = [];
+//     let counts = [];
 
-    for(position1 of numbers){
-        let count = 0;
+//     for(position1 of numbers){
+//         let count = 0;
     
-        for(position2 of numbers){
-            if(position1 === position2){
-                count += 1;
-            }
-        }
-        counts.push(count);
-    };
+//         for(position2 of numbers){
+//             if(position1 === position2){
+//                 count += 1;
+//             }
+//         }
+//         counts.push(count);
+//     };
     
-    let biggestIndex = 0;
-    for(index in counts){
-        if(counts[index] > counts[biggestIndex]){
-            biggestIndex = index;
-        }
-    }
+//     let biggestIndex = 0;
+//     for(index in counts){
+//         if(counts[index] > counts[biggestIndex]){
+//             biggestIndex = index;
+//         }
+//     }
     
-    return numbers[biggestIndex];
+//     return numbers[biggestIndex];
+// }
+
+// let result = returnFrequent(numbers);
+// console.log(result);
+
+
+//6.Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+
+
+let numero = 5;
+
+function summation(numero){
+    let sum = 0;
+    for(n = 1; n <= numero; n += 1){
+        sum += n;
+   }
+   return sum;
 }
 
-let result = returnFrequent(numbers);
+result = summation(numero);
 console.log(result);
-
 
