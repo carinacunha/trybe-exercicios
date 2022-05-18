@@ -16,13 +16,11 @@
 //     return false;
 //  };
 
-
 // string = 'cama';
 // console.log(verificaPalindromo(string));
 
 
 //2. Crie uma função que receba um array de inteiros e retorne o índice do maior valor;
-
 
 // function retornarMaior(array){
 //     for(index = 1; index < array.length; index += 1){
@@ -55,35 +53,51 @@
 
 //4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
 
- function biggerName(array){
-    for(index = 1; index < array.length; index += 1){
-        if(array[index].length > bigger.length){
-            bigger = array[index];
-        }
-     }
-    return console.log(bigger.length);
- }
+//  function biggerName(array){
+//     for(index = 1; index < array.length; index += 1){
+//         if(array[index].length > bigger.length){
+//             bigger = array[index];
+//         }
+//      }
+//     return console.log(bigger.length);
+//  }
 
-let array =  ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
-let bigger = array[3];
-biggerName(array);
+// let array =  ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+// let bigger = array[3];
+// biggerName(array);
 
 
 //🚀 5. Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
 
-// let repete = [];
-// let count = 0;
-// function retornarRepetidos(array) {
-//     for(index = 0; index < array.length; index += 1){
-//         for (index2 = 1; index2 < array.length; index2 += 1){
-//             if(array[index] === array[index2]){
-//                 repete.push(array[index]);
-//             }
-//         } 
-//     }
-// }
+let numbers = [2, 3, 2, 5, 8, 2, 3, 5, 5, 5];
 
 
-// let array = [2, 3, 2, 5, 8, 2, 3];
+function returnFrequent(numbers){
 
-// console.log(retornarRepetidos(array));
+    let counts = [];
+
+    for(position1 of numbers){
+        let count = 0;
+    
+        for(position2 of numbers){
+            if(position1 === position2){
+                count += 1;
+            }
+        }
+        counts.push(count);
+    };
+    
+    let biggestIndex = 0;
+    for(index in counts){
+        if(counts[index] > counts[biggestIndex]){
+            biggestIndex = index;
+        }
+    }
+    
+    return numbers[biggestIndex];
+}
+
+let result = returnFrequent(numbers);
+console.log(result);
+
+
