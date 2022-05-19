@@ -86,14 +86,19 @@
       function upperP() {
         let upper = document.querySelectorAll('p');
         for(index in upper){
-          upper[index].style.textTransform = 'uppercase';
+          return upper[index].style.textTransform = 'uppercase';
         };
       };
 
       upperP();
 
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-    
+      function printP() {
+        let pTags = document.querySelectorAll('p');
+        for(index in pTags){
+          console.log(pTags[index]);
+        };
+      };   
 
     </script>
   </body>
