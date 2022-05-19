@@ -53,26 +53,34 @@
         return document.getElementsByTagName('p')[1].innerText = ('Uma desenvolvedora web saudável e feliz');
          
       };
+
       changeP();
 
 //  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
 
       function changeColor() {
         let color = document.getElementsByClassName('main-content');
-        color[0].style.background = 'green';
-      }
+        return color[0].style.background = 'green';
+      };
 
       changeColor();
 
 //  Crie uma função que mude a cor do quadrado vermelho para branco.
       function changeColor2() {
         let colorWhite = document.querySelectorAll('.main-content .center-content');
-        colorWhite[0].style.background = 'white';
+        return colorWhite[0].style.background = 'white';
       }
 
       changeColor2();
 
 //  Crie uma função que corrija o texto da tag <h1>.
+      function changeTitle() {
+        let newTitle = document.querySelector('.title');
+        newTitle.innerText = 'Exercício 5.1 - JavaScript'
+      };
+
+      changeTitle();
+      
 //  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
       
