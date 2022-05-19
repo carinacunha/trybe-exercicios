@@ -27,6 +27,7 @@
 
       .main-content .center-content p {
         font-style: italic;
+        text-transform: none;
       }
     </style>
   </head>
@@ -76,14 +77,24 @@
 //  Crie uma função que corrija o texto da tag <h1>.
       function changeTitle() {
         let newTitle = document.querySelector('.title');
-        newTitle.innerText = 'Exercício 5.1 - JavaScript'
+        return newTitle.innerText = 'Exercício 5.1 - JavaScript';
       };
 
       changeTitle();
-      
+
 //  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+      function upperP() {
+        let upper = document.querySelectorAll('p');
+        for(index in upper){
+          upper[index].style.textTransform = 'uppercase';
+        };
+      };
+
+      upperP();
+
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-      
+    
+
     </script>
   </body>
 </html>
