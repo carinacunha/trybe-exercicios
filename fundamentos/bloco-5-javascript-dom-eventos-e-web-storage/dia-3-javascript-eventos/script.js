@@ -41,6 +41,7 @@ function createDaysOfTheWeek() {
 //Exercício 2
 
 function createHolidayButton(nameButton) {
+
     let buttonContainer = document.querySelector('.buttons-container');
     let buttonHoliday = document.createElement('button');
     buttonContainer.appendChild(buttonHoliday);
@@ -56,6 +57,7 @@ createHolidayButton('Feriados');
 let button = document.getElementById('btn-holiday');
 
 function changeBackgroundDays(){
+
     let holidays = document.querySelectorAll('.holiday');
 
     for(value of holidays){
@@ -74,6 +76,7 @@ button.addEventListener('click', changeBackgroundDays);
 //Exercício 4
 
 function buttonFriday(nameDay) {
+
     let buttonFriday = document.createElement('button');
     let buttonContainer = document.querySelector('.buttons-container')
     buttonFriday.setAttribute('id', 'btn-friday');
@@ -87,19 +90,16 @@ buttonFriday('Sexta-feira');
 
 let getButtonFriday = document.getElementById('btn-friday');
 
-
 function changeTextButtonFriday(){
+
     let fridays = document.querySelectorAll('.friday');
+    let originalValues = [4, 11, 18, 25];
 
     for(value of fridays){
-        //Create attribute
-        // let attribute = document.createAttribute('originalName');
-        // attribute.value = value.innerText;
-        // value.setAttributeNode(attribute);
-    
-        value.innerText = ('Uhuu!');
-    }     
+        let valueFridays = value.innerText = ('Uhuu!');
+    }
 }
+
 
 getButtonFriday.addEventListener('click', changeTextButtonFriday);
 
@@ -107,6 +107,7 @@ getButtonFriday.addEventListener('click', changeTextButtonFriday);
 //Exercício 6
 
 function getZoom() {
+
     let getDays = document.querySelector('#days');
 
     getDays.addEventListener('mouseover', function(evt){
@@ -128,6 +129,7 @@ zoomOut();
 //Exercício 7
 
 function doIt(task){
+
     let newTasks = document.createElement('span');
     let myTasks = document.querySelector('.my-tasks');
     myTasks.appendChild(newTasks);
@@ -138,8 +140,8 @@ doIt('Cozinhar');
 
 //Exercício 8
 
-
 function changeColor(color){
+
     let newDiv = document.createElement('div');
     let myTasks = document.querySelector('.my-tasks')
     newDiv.className = 'task';
@@ -147,27 +149,40 @@ function changeColor(color){
     myTasks.appendChild(newDiv);
 }
 
-changeColor('pink');
+changeColor('green');
 
 
 //Exercício 9
 
+function addClass(event){
+    let divTask = document.querySelector('.task');
+    let selected = document.getElementsByClassName('task selected');
+    // divClassName.classList.add = 'task selected';
+    // }
+    divTask.addEventListener('click', function(event){
+        if(selected.length == 0){
+            event.target.className = 'task selected';
+        }
+        else{
+            event.target.className = 'task';
+        }   
+    });
+}
 
-// function changeClass(){
+addClass();
 
-//     let divClassName = document.querySelector('.task')
-//     divClassName.className += 'selected';
-
-// }
-
-// divClass.addEventListener('click', changeClass);
 
 //Exercício 10
 
-// function dayColor() {
-//     let getDays = document.querySelector('#days');
-//     let colortask = 
 
-// }
+function dayColor() {
 
-// getDays.addEventListener('click', dayColor);
+    let getDaysCalendar = document.querySelector('#days');
+    let colorDiv = document.querySelector('.task').style.backgroundColor;
+    
+    getDaysCalendar.addEventListener('click', function(evt){
+        evt.target.style.backgroundColor = colorDiv;
+        })
+}
+
+dayColor();
