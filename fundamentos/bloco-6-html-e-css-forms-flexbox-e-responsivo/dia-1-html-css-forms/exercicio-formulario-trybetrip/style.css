@@ -65,12 +65,13 @@ fieldset{
 }
 
 #textbox{
-  width: 80%;
+  width: 97%;
   height: 130px;
   border-radius: 10px;
   color: rgb(66, 64, 64);
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  resize: none;
 }
 
 button{
