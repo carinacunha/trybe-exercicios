@@ -11,7 +11,7 @@ function changeBackground(){
         else{
             container.style.backgroundColor = 'rgb(65, 63, 66)';
             container.style.color = 'white';
-        }       
+        }   
 }
 
 changeBackground();

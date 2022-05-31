@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrybeTrip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="barr">
+    <img src="logo.png">
+  </div>
+
+  <div id="barrtwo"></div>
+
+  <fieldset>
+    <label for="name">Nome completo <br>
+      <input id="name" type="text" min="10" max="40" placeholder="Digite seu nome"></label>
+    <br>
+
+    <label for="email">Email<br>
+      <input id="email" type="email" min="10" max="50" placeholder="Digite seu email"></label>
+    <br>
+
+
+    <label for="destiny"> Destino preferido<br>
+      <input class="destiny" name="local" type="radio" value="Cidade"> Cidade
+      <input class="destiny" name="local" type="radio" value="Campo"> Campo
+      <input class="destiny" name="local" type="radio" value="Praia"> Praia
+      <input class="destiny" name="local" type="radio" value="Montanhas"> Montanhas
+    </label>
+    <br>
+    <br>
+
+    <label for="textbox"> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?<br>
+      <textarea id="textbox" name="textbox" maxlength="500"></textarea>
+    </label>
+    <br>
+
+    <label for="date">Qual a melhor data para realizar sua viagem? <br>
+      <input id="date" type="date" name="date" value="Data">
+    </label>
+    <br>
+
+    <label for="news">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+      <input class="news" type="radio" name="news" value="sim">Sim
+      <input class="news" type="radio" name="news" value="nao">Não
+    </label>
+    <br>
+    <br>
+
+    <label for="permission">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros?
+      <input class="permission" type="radio" name="permission" value="sim">Sim
+      <input class="permission" type="radio" name="permission" value="nao">Não
+    </label>
+    <br>
+    <br>
+
+    <button id="send" type="submit">Enviar</button>
+    <button id="clear" type="reset">Limpar</button>
+
+  </fieldset>
+  <script src="script.js"></script>
+</body>
+</html>
