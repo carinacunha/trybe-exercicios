@@ -28,6 +28,7 @@ body {
   display: flex;
   width: 500px;
   flex-grow: 90;
+  align-self: center;
 }
 
 .menu-container ul {
