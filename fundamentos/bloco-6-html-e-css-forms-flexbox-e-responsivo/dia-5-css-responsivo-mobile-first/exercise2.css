@@ -12,6 +12,8 @@ body{
   font-family: 'Open Sans', sans-serif;
   background-color: white;
   line-height: 30px;
+  text-align: justify;
+  
 }
 
 @media screen and (max-width: 415px) {
@@ -20,7 +22,7 @@ body{
     margin: 25px;
     line-height: 35px;
     font-size: 18px;
-    text-align: justify;
+    
     background-color: #EBCB8B;
   }
   #title{
@@ -64,5 +66,32 @@ body{
     line-height: 40px;
     font-size: 26px;
     margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 913px) and (max-width: 1500px){
+  body{
+    margin: 85px;
+    line-height: 55px;
+    font-size: 28px;
+    background-color: #d08670c5;
+  }
+  #title{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 90px;
+  }
+ 
+  h2{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  h1{
+    text-align: center;
+    line-height: 40px;
+    font-size: 32px;
+    margin-top: 120px;
+    margin-bottom: 50px;
   }
 }
