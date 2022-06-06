@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 415px) {
+
+  body{
+    margin: 25px;
+    line-height: 35px;
+    font-size: 18px;
+
+  }
+  #title{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 80px;
+  }
+ 
+  h2{
+    text-align: center;
+    margin-top: 50px;
+  }
+  h1{
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    margin-top: 50px;
+  }
+}
