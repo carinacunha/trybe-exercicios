@@ -32,5 +32,28 @@
 // };
 // console.log(generateNumber(2, check));
 
+//Exercício 3
+
+const rightAnswers = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const studentAnswers = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
 
+function checkAnswers(rightAnswer, studentAnswer) {
+  let counter = 0;
+  for (let index = 0; index < rightAnswer.length; index += 1){
+    if(rightAnswer[index] === studentAnswer[index]){
+      counter += 1;
+    } else if(studentAnswer[index] === 'N.A') {
+      counter += 0;
+    } else {
+      counter -= 0.5;
+    }
+  }
+  return counter;
+};
+
+const points = (rightAnswer, studentAnswer, callback) => {
+  return callback(rightAnswer, studentAnswer);
+};
+
+console.log(points(rightAnswers, studentAnswers, checkAnswers));
