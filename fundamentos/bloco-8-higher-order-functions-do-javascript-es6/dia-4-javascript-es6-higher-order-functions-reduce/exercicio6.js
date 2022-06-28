@@ -9,4 +9,4 @@ function studentAverage() {
   return nameAndAverage;
 }
 
-console.log(studentAverage(students, grades))
+console.log(studentAverage(students, grades));
